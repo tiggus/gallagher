@@ -1,4 +1,4 @@
-name: gallagher
+name: gallagher prod
 
 on:
   push:
