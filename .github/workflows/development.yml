@@ -6,12 +6,22 @@ on:
     branches: [ "dev" ]
   workflow_dispatch:
 
+env:
+  #ARM_CLIENT_ID: '${{ sectets.AzureID}}'
+  TF_ENV: 'dev'
+
 jobs:
   build:
     runs-on: ubuntu-latest
 
     steps:
       - uses: actions/checkout@v3
+
+      - name: Security Scans (whitesource)
+        run: echo whitesource
+
+      - name: code linter
+        run: echo linter
 
       - name: Terraform init
         run: terraform init
@@ -21,3 +31,6 @@ jobs:
 
       - name: Terraform apply
         run: echo apply
+
+      - name: unit tests
+        run: echo whitesource
