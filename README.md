@@ -37,3 +37,9 @@ a. Understanding of requirements and translation into basic architecture
 b. Understanding of Azure services and dependencies
 c. Promotion of builds to higher environments
 3. Recommendations for monitoring and scaling + how secrets are managed. 
+
+
+https://learn.microsoft.com/en-us/azure/architecture/web-apps/app-service/architectures/baseline-zone-redundant
+
+user -> app gateway private ip -> waf rules evaluated -> app service via private endpoint - not going to type the entier page :)
+
