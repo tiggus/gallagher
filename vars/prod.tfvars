@@ -1,0 +1,2 @@
+project = "prod"
+subscription = "sub"
